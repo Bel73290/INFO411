@@ -20,7 +20,7 @@
         <div class="menu-item">
             <img src="Green Burgouzz.png" alt="Green Burgouzz">
             <h2>Green Burgouzz</h2>
-            <p>Un steak d’aubergine mariné et cheddar mature de Somerset, spicy mayo, salade, kimchi dans un pain brioché.</p>
+            <p>Un steak d'haubergine mariné et cheddar mature de Somerset, spicy mayo, salade, kimchi dans un pain brioché.</p>
         </div>
 
         <div class="menu-item">
