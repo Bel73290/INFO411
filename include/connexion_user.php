@@ -12,7 +12,7 @@ require('include/Crud_Menu.php');
 </head>
 <body>
 
-    <h1>Menu Burgouzz</h1>
+    <h1>Menu Burgouzz - Connexion</h1>
 
     <div class="menu">
     <?php
