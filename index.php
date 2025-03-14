@@ -19,7 +19,9 @@ require('include/Crud_Menu.php');
             <img src="img/Classic Burgouzz.png" alt="Classic Burgouzz">
             <?php
             $menus = list_menus();
-            echo "ID:".$menus[id];
+            foreach ($menus as $menu) {
+                echo "ID: " . $menu['id'] . "<br>";
+            }
             ?>
             <h2>Classic Burgouzz</h2>
             <input class="styled" type="button" value="Choisissez ce burger" />
