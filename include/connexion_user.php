@@ -1,7 +1,4 @@
-<?php
 
-require('include/Crud_Menu.php');
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
