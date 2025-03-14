@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <?php
-session_start(); // Démarrer la session
+
 require('connexion.php')
 
 // Vérifie si le formulaire est soumis
@@ -23,8 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (mysqli_num_rows($result) > 0) {
-        $_SESSION['name'] = $name;
-		$_SESSION['mdp'] = $mdp;
         header("Location: ../index.php");
         exit();  
     } else {
