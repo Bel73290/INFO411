@@ -1,5 +1,5 @@
 <?php
-require('../connexion.php');
+require('connexion.php');
 require('../Crud_Menu.php');
 ?>
 <!DOCTYPE html>
