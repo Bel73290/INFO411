@@ -1,6 +1,6 @@
 <?php
-required('../connexion.php')
-required('../Crud_Menu.php')
+require('../connexion.php')
+require('../Crud_Menu.php')
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,7 +18,8 @@ required('../Crud_Menu.php')
         <div class="menu-item">
             <img src="img/Classic Burgouzz.png" alt="Classic Burgouzz">
             <?php
-            echo list_menus($CONNEXION);
+            $menus = list_menus($CONNEXION);
+            echo "ID:".$menus[id];
             ?>
             <h2>Classic Burgouzz</h2>
         </div>
