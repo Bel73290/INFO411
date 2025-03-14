@@ -18,11 +18,11 @@ require('include/Crud_Menu.php');
     <?php
             $menus = list_menus($CONNEXION);
             foreach ($menus as $menu) {
-                echo "<div class='menu-item'>"
-                echo "<img src='img/Classic Burgouzz.png' alt='Classic Burgouzz'>"
-                echo "<h2>Classic Burgouzz</h2>"
-                echo "<input class='styled' type='button' value='Choisissez ce burger' />"
-                echo  "</div>"
+                echo "<div class='menu-item'>";
+                echo "<img src='img/Classic Burgouzz.png' alt='Classic Burgouzz'>";
+                echo "<h2>Classic Burgouzz</h2>";
+                echo "<input class='styled' type='button' value='Choisissez ce burger' />";
+                echo  "</div>";
             }
             ?>
         
