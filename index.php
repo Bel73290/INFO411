@@ -18,7 +18,7 @@ require('include/Crud_Menu.php');
         <div class="menu-item">
             <img src="img/Classic Burgouzz.png" alt="Classic Burgouzz">
             <?php
-            $menus = list_menus($CONNEXION);
+            $menus = list_menus();
             echo "ID:".$menus[id];
             ?>
             <h2>Classic Burgouzz</h2>
