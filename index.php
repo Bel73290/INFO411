@@ -15,7 +15,7 @@ require('include/Crud_Menu.php');
     <div class="header">
         <img src="img/logo.jpg" alt="Logo Burgouzz">
         <h1>Menu Burgouzz</h1>
-        <a href="connexion_user.php">Connexion</a>
+        <a href="include/connexion_user.php">Connexion</a>
     </div>
 
     <div class="menu">
