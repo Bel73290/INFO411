@@ -14,19 +14,14 @@ require('include/Crud_Menu.php');
 
     <h1>Menu Burgouzz - Connexion</h1>
 
-    <div class="menu">
-    <?php
-            $menus = list_menus($CONNEXION);
-            foreach ($menus as $menu) {
-                echo "<div class='menu-item'>";
-                echo "<img src='img/" . $menu['nom'] . ".png' alt='" . $menu['nom'] . "'>";
-                echo "<h2>" . $menu['nom'] . "</h2>";
-                echo "<h2>" . $menu['prix'] . "€</h2>";
-                echo "<input class='styled' type='button' value='Choisissez ce burger' />";
-                echo "</div>";
-
-            }
-            ?>
+    <div class="connexion">
+    <form method="POST" action="">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8"  />
+    <label for="name">Mot de passe :</label>
+    <input type="text" id="mdp" name="mdp" required minlength="4" maxlength="50"  />
+    <button class="button" type="submit"> Connexion</button>
+	</form>
         
        
     </div>
