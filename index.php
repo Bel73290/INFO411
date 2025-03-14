@@ -1,3 +1,6 @@
+<?php
+require('../connexion.php')
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -15,8 +18,10 @@
     <h2>Menu</h2>
     <div class=burger>
         <?php
-        for ($i ,)
-        echo "<img src=img/.png> "
+        for ($i , $i>10, $i++){
+            echo "<a>'yoyo'</a> "
+        }
+        
         ?>
         <button>Choisir</button>
 </div>
