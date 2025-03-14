@@ -1,4 +1,4 @@
-/* Fond de notre site */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
@@ -7,14 +7,32 @@ body {
   text-align: center;
 }
 
-/* Titre */
-h1 {
-  font-size: 2.5em;
-  color: #d62828;
-  margin-top: 20px;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
 }
 
-/* Menu Container */
+.header img {
+  height: 50px; 
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  flex-grow: 1;
+  text-align: center;
+  color: #d62828;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #d62828;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +41,6 @@ h1 {
   padding: 20px;
 }
 
-/* Chaque item pour les burger */
 .menu-item {
   background: white;
   border-radius: 10px;
@@ -33,14 +50,13 @@ h1 {
   text-align: center;
 }
 
-/* Images */
 .menu-item img {
-  width: 100%;
-  height: auto;
+  width: 200px; 
+  height: 200px;
+  object-fit: cover; 
   border-radius: 10px;
 }
 
-/* Burger nom */
 .menu-item h2 {
   font-size: 1.5em;
   color: #333;
