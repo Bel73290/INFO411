@@ -1,6 +1,4 @@
-<?php
-require('../connexion.php')
-?>
+
 <!doctype html>
 <html lang="fr">
 <head>
