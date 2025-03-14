@@ -20,7 +20,7 @@ require('include/Crud_Menu.php');
             <?php
             $menus = list_menus($CONNEXION);
             foreach ($menus as $menu) {
-                echo "ID: " . $menu['id'] . "<br>";
+                echo "ID: " . $menu['nom'];
             }
             ?>
             <h2>Classic Burgouzz</h2>
