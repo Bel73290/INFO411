@@ -1,3 +1,55 @@
-p {
-    color: red;
-  }
+/* Fond de notre site */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Titre */
+h1 {
+  font-size: 2.5em;
+  color: #d62828;
+  margin-top: 20px;
+}
+
+/* Menu Container */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Chaque item pour les burger */
+.menu-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Images */
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Burger nom */
+.menu-item h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Description */
+.menu-item p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.4;
+}
