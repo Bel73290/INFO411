@@ -2,7 +2,7 @@
 /**
  * Gestion du menu
  */
-required('../connexion.php')
+require('../connexion.php')
 $debeug = true;
 
 function insert_menu($CONNEXION, $nom, $description, $prix) {

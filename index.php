@@ -1,3 +1,7 @@
+<?php
+required('../connexion.php')
+required('../Crud_Menu.php')
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,6 +17,9 @@
     <div class="menu">
         <div class="menu-item">
             <img src="img/Classic Burgouzz.png" alt="Classic Burgouzz">
+            <?php
+            echo list_menus($CONNEXION);
+            ?>
             <h2>Classic Burgouzz</h2>
             <input class="styled" type="button" value="Choisissez ce burger" />
         </div>
