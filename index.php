@@ -17,9 +17,8 @@
     <div class=burger>
         <?php
         for ($i=0 ; $i>10; $i++){
-            echo "<a>yoyo</a> ";
+            echo "yoyo ";
         }
-        
         ?>
         <button>Choisir</button>
 </div>
