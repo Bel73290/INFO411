@@ -11,8 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mdp = trim($_POST['mdp']);
     
     // Échapper les valeurs pour la base de données
-    $name = mysqli_real_escape_string($conn, $name);
-    $mdp = mysqli_real_escape_string($conn, $mdp);
+    $name = mysqli_real_escape_string($CONNEXION, $name);
+    $mdp = mysqli_real_escape_string($CONNEXION, $mdp);
 
     // Requête SQL
     $sql = "SELECT * FROM `utilisateur` WHERE `nom`='$name' AND `mdp`='$mdp'";
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Nom ou numéro du colis incorrect.";
     }
 
-    mysqli_close($conn);
+    mysqli_close($CONNEXION);
 }
 ?>
 <html lang="fr">
