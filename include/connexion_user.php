@@ -1,5 +1,39 @@
 
 <!DOCTYPE html>
+<?php
+session_start(); // Démarrer la session
+require('connexion.php')
+
+// Vérifie si le formulaire est soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Nettoyer les entrées
+    $name = trim($_POST['name']);
+    $colis = trim($_POST['mdp']);
+    
+    // Échapper les valeurs pour la base de données
+    $name = mysqli_real_escape_string($conn, $name);
+    $mdp = mysqli_real_escape_string($conn, $mdp);
+
+    // Requête SQL
+    $sql = "SELECT * FROM `utilisateur` WHERE `nom`='$name' AND `mdp`='$mdp'";
+    $result = mysqli_query($CONNEXION, $sql);
+
+    if (!$result) {
+        die("Erreur SQL : " . mysqli_error($CONNEXION)); 
+    }
+
+    if (mysqli_num_rows($result) > 0) {
+        $_SESSION['name'] = $name;
+		$_SESSION['mdp'] = $mdp;
+        header("Location: ../index.php");
+        exit();  
+    } else {
+        echo "Nom ou numéro du colis incorrect.";
+    }
+
+    mysqli_close($conn);
+}
+?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
