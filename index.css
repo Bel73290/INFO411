@@ -1,7 +1,13 @@
-html {
-  overflow-y: hidden;
+
+
+::-webkit-scrollbar {
+  display: none; 
 }
+
 body {
+  overflow-y: scroll; / Permet le défilement vertical avec la molette /
+  -ms-overflow-style: none; / Cache la barre de défilement pour IE et Edge /
+  scrollbar-width: none; / Cache la barre de défilement pour Firefox */
   font-family: Arial, sans-serif;
   background-color: #FEFEE2;
   margin: 0;
