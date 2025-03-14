@@ -21,7 +21,7 @@ require('include/Crud_Menu.php');
                 echo "<div class='menu-item'>";
                 echo "<img src='img/" . $menu['nom'] . ".png' alt='" . $menu['nom'] . "'>";
                 echo "<h2>" . $menu['nom'] . "</h2>";
-                echo "<h2>" . $menu['prix'] . "</h2>";
+                echo "<h2>" . $menu['prix'] . "€"</h2>";
                 echo "<input class='styled' type='button' value='Choisissez ce burger' />";
                 echo "</div>";
 
