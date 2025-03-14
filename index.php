@@ -1,6 +1,6 @@
 <?php
-require('../connexion.php')
-require('../Crud_Menu.php')
+require('../connexion.php');
+require('../Crud_Menu.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
