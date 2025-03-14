@@ -1,13 +1,5 @@
 
-
-::-webkit-scrollbar {
-  display: none; 
-}
-
 body {
-  overflow-y: scroll; / Permet le défilement vertical avec la molette /
-  -ms-overflow-style: none; / Cache la barre de défilement pour IE et Edge /
-  scrollbar-width: none; / Cache la barre de défilement pour Firefox */
   font-family: Arial, sans-serif;
   background-color: #FEFEE2;
   margin: 0;
@@ -20,7 +12,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #000000;
+  background-color: 	#000000;
 }
 
 .header img {
@@ -59,8 +51,8 @@ body {
 }
 
 .menu-item img {
-  width: 220px; 
-  height: 300px;
+  width: 400px; 
+  height: 400px;
   object-fit: cover; 
   border-radius: 10px;
 }
