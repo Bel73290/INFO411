@@ -12,11 +12,7 @@ require('include/Crud_Menu.php');
 </head>
 <body>
 
-    <div class="header">
-        <img src="img/logo.jpg" alt="Logo Burgouzz">
-        <h1>Menu Burgouzz</h1>
-        <a href="connexion.php">Connexion</a>
-    </div>
+    <h1>Menu Burgouzz</h1>
 
     <div class="menu">
     <?php
@@ -28,10 +24,12 @@ require('include/Crud_Menu.php');
                 echo "<h2>" . $menu['prix'] . "€</h2>";
                 echo "<input class='styled' type='button' value='Choisissez ce burger' />";
                 echo "</div>";
+
             }
-    ?>
+            ?>
+        
+       
     </div>
 
 </body>
 </html>
-
