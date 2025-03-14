@@ -12,8 +12,12 @@
     <a>Connexion</a>
 </div>
 <div>
+    <h2>Menu</h2>
     <div class=burger>
-        <img>
+        <?php
+        for ($i ,)
+        echo "<img src=img/.png> "
+        ?>
         <button>Choisir</button>
 </div>
 </div>
