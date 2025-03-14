@@ -37,7 +37,7 @@ function select_menu($CONNEXION, $id) {
 function list_menus($CONNEXION) {
     $sql = "SELECT * FROM menu";
     global $debeug;
-    if ($debeug) echo $sql;
+
     $res = mysqli_query($CONNEXION, $sql);
     return rs_to_tab($res);
 }
