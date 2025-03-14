@@ -15,47 +15,18 @@ require('include/Crud_Menu.php');
     <h1>Menu Burgouzz</h1>
 
     <div class="menu">
-        <div class="menu-item">
-            <img src="img/Classic Burgouzz.png" alt="Classic Burgouzz">
-            <?php
+    <?php
             $menus = list_menus($CONNEXION);
             foreach ($menus as $menu) {
-                echo "ID: " . $menu['nom'];
+                echo "<div class='menu-item'>"
+                echo "<img src='img/Classic Burgouzz.png' alt='Classic Burgouzz'>"
+                echo "<h2>Classic Burgouzz</h2>"
+                echo "<input class='styled' type='button' value='Choisissez ce burger' />"
+                echo  "</div>"
             }
             ?>
-            <h2>Classic Burgouzz</h2>
-            <input class="styled" type="button" value="Choisissez ce burger" />
-        </div>
-
-        <div class="menu-item">
-            <img src="img/Green Burgouzz.png" alt="Green Burgouzz">
-            <h2>Green Burgouzz</h2>
-            <input class="styled" type="button" value="Choisissez ce burger" />
-        </div>
-
-        <div class="menu-item">
-            <img src="img/Kaarage Burgouzz.png" alt="Kaarage Burgouzz">
-            <h2>Kaarage Burgouzz</h2>
-            <input class="styled" type="button" value="Choisissez ce burger" />
-        </div>
-
-        <div class="menu-item">
-            <img src="img/Summer Burgouzz.png" alt="Summer Burgouzz">
-            <h2>Summer Burgouzz</h2>
-            <input class="styled" type="button" value="Choisissez ce burger" />
-        </div>
-
-        <div class="menu-item">
-            <img src="img/Truffle Burgouzz.png" alt="Truffle Burgouzz">
-            <h2>Truffle Burgouzz</h2>
-            <input class="styled" type="button" value="Choisissez ce burger" />
-        </div>
-
-        <div class="menu-item">
-            <img src="img/Winter Burgouzz.png" alt="Winter Burgouzz">
-            <h2>Winter Burgouzz</h2>
-            <input class="styled" type="button" value="Choisissez ce burger" />
-        </div>
+        
+       
     </div>
 
 </body>
