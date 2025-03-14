@@ -8,7 +8,7 @@ require('connexion.php')
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Nettoyer les entrées
     $name = trim($_POST['name']);
-    $colis = trim($_POST['mdp']);
+    $mdp = trim($_POST['mdp']);
     
     // Échapper les valeurs pour la base de données
     $name = mysqli_real_escape_string($conn, $name);
