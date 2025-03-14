@@ -14,6 +14,7 @@
 <div>
     <div class=burger>
         <img>
+        <button>Choisir</button>
 </div>
 </div>
     
