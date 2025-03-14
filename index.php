@@ -16,7 +16,7 @@
     <h2>Menu</h2>
     <div class=burger>
         <?php
-        for ($i ; $i>10; $i++){
+        for ($i=0 ; $i>10; $i++){
             echo "<a>'yoyo'</a> ";
         }
         
