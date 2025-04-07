@@ -1,0 +1,22 @@
+services:
+  mariadb:
+    image: mariadb
+    environment:
+      - MARIADB_USER=admin
+      - MARIADB_PASSWORD=admin
+      - MARIADB_DATABASE=burger
+      - MARIADB_ROOT_PASSWORD=admin+
+    ports:
+      - 3306:3306
+  monapache:
+    image: iliasblf/monapache
+    ports:
+      - 80:80
+  phpmyadmin:
+    image: phpmyadmin
+    environment:
+      - PMA_HOST=mariadb
+    ports:
+      - 8080:80
+  monubuntu:
+    image: iliasblf/monubuntu

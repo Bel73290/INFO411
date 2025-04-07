@@ -1,7 +1,9 @@
 <?php
-	    define ('SERVEUR_BD','c_mariadb:3306');
-	    define ('LOGIN_BD','root');
-	    define ('PASS_BD','rootpassword');
-	    define ('NOM_BD','burger');
+	define ('MARIADB_USER','admin');
+	define ('MARIADB_PASSWORD','admin');
+	define ('MARIADB_DATABASE','burger');
+	define ('MARIADB_ROOT_PASSWORD','admin+');
 ?>
+
+
     

@@ -1,7 +1,7 @@
 <?php
     require('connect.php');
 	
-	$CONNEXION = mysqli_connect (SERVEUR_BD, LOGIN_BD, PASS_BD);
+	$CONNEXION = mysqli_connect (MARIADB_USER, MARIADB_PASSWORD, MARIADB_DATABASE, MARIADB_ROOT_PASSWORD);
 	//Connexion au serveur de bases de données
 	if (mysqli_connect_errno()) {
 		echo 'Désolé, connexion au serveur ' . SERVEUR_BD . ' impossible, '. mysqli_connect_error(), "\n";
