@@ -8,6 +8,8 @@ services:
       - MARIADB_ROOT_PASSWORD=admin+
     ports:
       - 3306:3306
+    volume:
+     - ./db_data:/var/lib/mysql
   monapache:
     image: iliasblf/monapache
     ports:
